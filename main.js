@@ -1,6 +1,6 @@
 
 
-for (let i = 0; i <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
 
     if ((i % 3 === 0) && (i % 5 === 0)) {
         console.log("fizzbuzz")
@@ -44,11 +44,7 @@ for (let i = 1; i <= totalSquares; i++) {
     } else if (i % 3 === 0) {
         singleSquare.classList.add("my-bg-secondary", "d-flex", "align-items-center")
         singleSquare.innerHTML = ("fizz");
-    } else if ((i % 3 === 0) && (i % 5 === 0)) {
-        singleSquare.classList.add("my-bg-danger", "d-flex", "align-items-center")
-        singleSquare.innerHTML = ("fizzbuzz");
-    }
-    else {
+    } else {
         singleSquare.classList.add("my-bg-primary", "d-flex", "align-items-center")
         singleSquare.innerHTML = (i);
     }
