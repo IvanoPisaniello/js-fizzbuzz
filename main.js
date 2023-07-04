@@ -2,11 +2,14 @@
 
 for (let i = 0; i <= 100; i++) {
 
-    if (i % 5 === 0) {
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        console.log("fizzbuzz")
+    }
+    else if (i % 5 === 0) {
         console.log("buzz")
     } else if (i % 3 === 0) {
         console.log("fizz")
-    } else if ((i % 5) % 3 === 0) {
+    } else if ((i % 3 === 0) && (i % 5 === 0)) {
         console.log("fizzbuzz")
     }
     else {
@@ -31,13 +34,17 @@ for (let i = 1; i <= totalSquares; i++) {
     //inseriamo i numeri del ciclo all'interno dei quadrati
     singleSquare.innerHTML = (i);
     //inseriamo le condizioni in modo tale da inserire i diversi background e le diverse stringhe da avere all'interno dei singoli box
-    if (i % 5 === 0) {
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        singleSquare.classList.add("my-bg-danger", "d-flex", "align-items-center")
+        singleSquare.innerHTML = ("fizzbuzz");
+    }
+    else if (i % 5 === 0) {
         singleSquare.classList.add("my-bg-warning", "d-flex", "align-items-center")
         singleSquare.innerHTML = ("buzz");
     } else if (i % 3 === 0) {
         singleSquare.classList.add("my-bg-secondary", "d-flex", "align-items-center")
         singleSquare.innerHTML = ("fizz");
-    } else if ((i % 5) % 3 === 0) {
+    } else if ((i % 3 === 0) && (i % 5 === 0)) {
         singleSquare.classList.add("my-bg-danger", "d-flex", "align-items-center")
         singleSquare.innerHTML = ("fizzbuzz");
     }
@@ -50,4 +57,4 @@ for (let i = 1; i <= totalSquares; i++) {
 
 let titleEl = document.querySelector(".title");
 
-titleEl.classList.add("font-s-big", "text-light", "pt-5")
+titleEl.classList.add("font-s-big", "text-light", "pt-3")
