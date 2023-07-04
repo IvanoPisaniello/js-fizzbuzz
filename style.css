@@ -1,0 +1,37 @@
+.grid-square {
+    aspect-ratio: 1/1;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+    justify-content: center;
+}
+
+.col-boxes {
+    margin-top: 100px;
+    padding: 50px;
+}
+
+body {
+    background-color: #083B4B;
+}
+
+.font-s-big {
+    font-size: 100px;
+}
+
+.my-bg-primary {
+    background-color: #1289B2;
+}
+
+.my-bg-secondary {
+    background-color: #08D6A0;
+}
+
+.my-bg-warning {
+    background-color: #FFD166;
+}
+
+.my-bg-danger {
+    background-color: #F0466F;
+}

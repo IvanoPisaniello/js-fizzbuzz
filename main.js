@@ -32,17 +32,17 @@ for (let i = 1; i <= totalSquares; i++) {
     singleSquare.innerHTML = (i);
     //inseriamo le condizioni in modo tale da inserire i diversi background e le diverse stringhe da avere all'interno dei singoli box
     if (i % 5 === 0) {
-        singleSquare.classList.add("bg-primary")
+        singleSquare.classList.add("my-bg-warning", "d-flex", "align-items-center")
         singleSquare.innerHTML = ("buzz");
     } else if (i % 3 === 0) {
-        singleSquare.classList.add("bg-secondary")
+        singleSquare.classList.add("my-bg-secondary", "d-flex", "align-items-center")
         singleSquare.innerHTML = ("fizz");
     } else if ((i % 5) % 3 === 0) {
-        singleSquare.classList.add("bg-warning")
+        singleSquare.classList.add("my-bg-danger", "d-flex", "align-items-center")
         singleSquare.innerHTML = ("fizzbuzz");
     }
     else {
-        singleSquare.classList.add("bg-danger")
+        singleSquare.classList.add("my-bg-primary", "d-flex", "align-items-center")
         singleSquare.innerHTML = (i);
     }
 }
